@@ -4,7 +4,7 @@ Gentoo Portage Overlay to install parallels-tools.
 ## Steps to install
 
 1. Mount the Parallels Guest Tools CD at /mnt/cdrom
-2. Run scripts/import-parallels-tools.sh which imports the important files from the guest tools into $DISTDIR
+2. Run scripts/import-parallels-tools.sh which imports the important files from the guest tools into /usr/portage/distfiles
 3. Emerge sys-kernel/parallels-tools for the kernel modules and sys-apps/parallels-tools for the user space applications
 
 ## Usage
