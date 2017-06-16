@@ -12,7 +12,7 @@ if test -d $CDROM_MOUNTPOINT
 then
 	for file in $FILES_KMOD
 	do
-		rsync -a $CDROM_MOUNTPOINT/kmod/$file $DISTDIR/
+		rsync -a $CDROM_MOUNTPOINT/kmods/$file $DISTDIR/
 	done
 	for file in $FILES_TOOLS
 	do
