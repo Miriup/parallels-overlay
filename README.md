@@ -14,7 +14,6 @@ as I found out that when using remote X11 connections the OpenGL version degrade
 which wasn't sufficient for the application I wanted to run. So after installing these two packages, 
 this is how I would start X11 on my machine:
 
-1. /etc/init.d/prltoolsd start
 2. Xorg &
 3. export DISPLAY=:0
 4. wm2 &
