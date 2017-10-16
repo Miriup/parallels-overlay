@@ -12,14 +12,14 @@ if test -d $CDROM_MOUNTPOINT
 then
 	for file in $FILES_KMOD
 	do
-		rsync -a $CDROM_MOUNTPOINT/kmods/$file $DISTDIR/
+		rsync -ru $CDROM_MOUNTPOINT/kmods/$file $DISTDIR/
 	done
 	for file in $FILES_TOOLS
 	do
-		rsync -a --progress $CDROM_MOUNTPOINT/tools/$files $DISTDIR/
+		rsync -ru --progress $CDROM_MOUNTPOINT/tools/$files $DISTDIR/
 	done
 	for file in $FILES_INSTALLER
 	do
-		rsync -a $CDROM_MOUNTPOINT/installer/$files $DISTDIR/
+		rsync -ru $CDROM_MOUNTPOINT/installer/$files $DISTDIR/
 	done
 fi
